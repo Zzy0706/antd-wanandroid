@@ -4,9 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import { Button } from 'ant-design-vue'
 import router from './router'
+import axiosApi from './api/api'
 
 Vue.component(Button.name, Button)
 Vue.config.productionTip = false
+Vue.prototype.$axiosApi = axiosApi
 
 /* eslint-disable no-new */
 new Vue({
